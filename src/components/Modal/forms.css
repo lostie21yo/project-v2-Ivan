@@ -1,0 +1,124 @@
+.form-input {
+  font-size: 16px;
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+  border: 1px solid #5c5c5c;
+  background-color: #292e33;
+}
+
+.form-input:focus {
+  border-color: #007eff;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 0 3px rgba(0, 126, 255, 0.1);
+  outline: none;
+}
+
+.form-label {
+  /* font-weight: bold; */
+  margin: 8px 0px 2px 5px;
+  display: block;
+  /* margin-bottom: .5rem; */
+}
+
+button {
+  max-width: 150px;
+  /* margin: 20px 0; */
+  padding: 12px 20px;
+  border-style: none;
+  border-radius: 5px;
+  background-color: #08c;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  font-size: 17px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+button:disabled {
+  opacity: .5;
+  cursor: not-allowed !important;
+}
+
+
+button.outline {
+  background-color: #eee;
+  border: 1px solid #aaa;
+  color: #555;
+}
+
+.field-line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-field {
+  padding: 5px 5px;
+}
+
+.field-error {
+  color: red;
+  font-size: 14px;
+}
+
+.order-details {
+  padding: 0 2%;
+  display: flex;
+  flex-direction: column;
+}
+
+.order-details-line {
+  padding: 2px;
+  font-size: 14px;
+  /* border-bottom: 1px solid #5c5c5c; */
+  /* background-color: #242424; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-photo {
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #5c5c5c;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.price {
+  margin: 0 0px;
+  font-size: 16px;
+  width: 15%;
+}
+
+.total {
+  margin-top: 0px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.input-rows {
+  display: flex;
+  flex-direction: column;
+  padding: 4px 4px 21px 4px;
+  border: 1px solid #495057;
+  /* border-bottom: 1px solid #5c5c5c; */
+  border-radius: 0.5em;
+  /* background-color: #495057; */
+}
+
+.add-input-btn {
+  width: 37px;
+  height: 37px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  top: -18px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

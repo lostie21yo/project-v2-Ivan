@@ -1,0 +1,155 @@
+.panel {
+  width: 35%;
+  right: 0px;
+  background-color: #292521;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* HEADER */
+
+/* FILTER */
+.filter {
+  padding: 6px;
+  justify-content: center;
+  display: flex;
+  /* align-items: stretch; */
+  /* align-content: stretch; */
+  /* flex-wrap: wrap */
+}
+
+.filter-button-group {
+  margin: 0px;
+  /* justify-content: space-between; */
+  display: flex;
+  /* align-content: stretch; */
+  /* align-items: stretch; */
+  flex-direction: column;
+}
+
+/* MENU */
+
+.scrollbar {
+  overflow-y: scroll;
+  height: 60%;
+  flex: 1 0 auto;
+  flex-wrap: wrap;
+  border: 1px solid #21252900;
+}
+
+.scrollbar-primary {
+  scrollbar-color: #40474e #f5f5f5;
+  flex: 1 0 auto;
+}
+
+.scrollbar-primary::-webkit-scrollbar {
+  width: 8px;
+  background-color: #292e33;
+  border-radius: 10px;
+  margin: 50px;
+}
+
+.scrollbar-primary::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(43, 48, 53, 0.1);
+  background-color: #198754;
+}
+
+.btn-image-container {
+  height: 80px;
+  position: relative;
+  right: 0%;
+  text-align: center;
+  color: white;
+  background-color: #2b3035;
+}
+
+.btn-image-text-position {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translate(0, -50%)
+}
+
+.btn-image {
+  height: 100%;
+  object-fit: contain;
+}
+
+.gradient {
+  position: absolute;
+  height: 100%;
+  right: 0px;
+  line-height: 0;
+  /* width: 300px; */
+}
+
+.gradient:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent;
+  background-image: linear-gradient(to right, #2b3035, #0000001e);
+  opacity: 1;
+}
+
+/* COLOR & HEIGHT FILTER */
+.CH-btn-group {
+  display: flex;
+  padding-bottom: 10px;
+  justify-content: space-around;
+  align-items: center
+}
+
+.height-toggle-button {
+  --bs-btn-border-radius: 20px;
+  border-radius: 5px;
+  padding: 0px;
+  /* margin-right: 5px; */
+}
+
+.color-toggle-button {
+  --bs-btn-border-radius: 20px;
+  border-radius: 5px;
+  margin-right: 5px;
+  height: 25px;
+  width: 25px;
+}
+
+.radio-btn-group {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.price-badge {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 25px;
+  background-color: white;
+  border-radius: 0.75rem;
+  padding: 2px 6px;
+  color: black;
+}
+
+
+/* FOOTER */
+.footer {
+  background-color: rgb(43, 48, 53);
+  color: white;
+}
+
+.footer-button {
+  --bs-border-radius: 2rem;
+  width: 80%;
+  /* height: 45px; */
+}
